@@ -1,5 +1,4 @@
 #include "myTest.h"
-
 #include <ll/api/plugin/NativePlugin.h>
 #include <memory>
 
@@ -27,7 +26,6 @@ bool myTest::enable() {
     getSelf().getLogger().info("enabling...");
 
     auto& logger = mSelf->getLogger();
-
 
     return true;
 }
