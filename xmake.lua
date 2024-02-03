@@ -3,7 +3,7 @@ add_rules("mode.debug", "mode.release", "mode.releasedbg")
 add_repositories("liteldev-repo https://github.com/LiteLDev/xmake-repo.git")
 
 -- Option 1: Use the latest version of LeviLamina released on GitHub.
-add_requires("levilamina")
+add_requires("levilamina 0.6.3")
 
 -- Option 2: Use a specific version of LeviLamina released on GitHub.
 -- add_requires("levilamina x.x.x")
@@ -38,7 +38,7 @@ add_requires("levilamina")
 
 set_runtimes("MD")
 
-target("rename-this") -- Change this to your plugin name.
+target("myFirTest") -- Change this to your plugin name.
     add_cxflags(
         "/EHa", -- To catch both structured (asynchronous) and standard C++ (synchronous) exceptions.
         "/utf-8" -- To enable UTF-8 source code.
